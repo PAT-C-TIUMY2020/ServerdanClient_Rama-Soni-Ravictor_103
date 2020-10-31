@@ -9,70 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace Server_Rama_Soni_Ravictor_20180140103.ServiceReference1 {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="IMatematika.Koordinat", Namespace="http://schemas.datacontract.org/2004/07/_ServiceMtk_P1_20180140103")]
-    [System.SerializableAttribute()]
-    public partial class IMatematikaKoordinat : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int XField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int YField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int X {
-            get {
-                return this.XField;
-            }
-            set {
-                if ((this.XField.Equals(value) != true)) {
-                    this.XField = value;
-                    this.RaisePropertyChanged("X");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Y {
-            get {
-                return this.YField;
-            }
-            set {
-                if ((this.YField.Equals(value) != true)) {
-                    this.YField = value;
-                    this.RaisePropertyChanged("Y");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IMatematika")]
@@ -103,10 +40,10 @@ namespace Server_Rama_Soni_Ravictor_20180140103.ServiceReference1 {
         System.Threading.Tasks.Task<int> BagiAsync(int a, int b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMatematika/TKoordinat", ReplyAction="http://tempuri.org/IMatematika/TKoordinatResponse")]
-        Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat TKoordinat(Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b);
+        ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat TKoordinat(ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMatematika/TKoordinat", ReplyAction="http://tempuri.org/IMatematika/TKoordinatResponse")]
-        System.Threading.Tasks.Task<Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat> TKoordinatAsync(Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b);
+        System.Threading.Tasks.Task<ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat> TKoordinatAsync(ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -168,11 +105,11 @@ namespace Server_Rama_Soni_Ravictor_20180140103.ServiceReference1 {
             return base.Channel.BagiAsync(a, b);
         }
         
-        public Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat TKoordinat(Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b) {
+        public ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat TKoordinat(ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b) {
             return base.Channel.TKoordinat(a, b);
         }
         
-        public System.Threading.Tasks.Task<Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat> TKoordinatAsync(Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b) {
+        public System.Threading.Tasks.Task<ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat> TKoordinatAsync(ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat a, ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat b) {
             return base.Channel.TKoordinatAsync(a, b);
         }
     }

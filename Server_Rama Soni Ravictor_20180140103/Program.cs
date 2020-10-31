@@ -1,10 +1,12 @@
 ﻿using Server_Rama_Soni_Ravictor_20180140103.ServiceReference1;
+using ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _ServiceMtk_P1_20180140103;
 
 namespace Server_Rama_Soni_Ravictor_20180140103
 {
@@ -46,7 +48,7 @@ namespace Server_Rama_Soni_Ravictor_20180140103
             ServiceHost hostObj = null;
             try
             {
-                hostObj = new ServiceHost(typeof(IMatematika));
+                hostObj = new ServiceHost(typeof(Matematika));
                 hostObj.Open();
                 Console.WriteLine("Server is Off!!!");
                 Console.ReadLine();

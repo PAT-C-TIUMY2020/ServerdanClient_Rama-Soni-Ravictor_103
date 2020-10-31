@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="IMatematikaKoordinat" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>Server_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat, Connected Services.ServiceReference1.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>ServerdanClient_Rama_Soni_Ravictor_20180140103.ServiceReference1.IMatematikaKoordinat, Client_Rama Soni Ravictor_20180140103, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>
